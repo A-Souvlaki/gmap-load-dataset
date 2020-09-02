@@ -21,8 +21,8 @@ namespace GMap_Load_DataSet.GUI
     public partial class MapWindow : Form
     {
         private ListOffices _ListOffices;
-        private List<PointLatLng> puntos;
         GMapOverlay markers;
+        private DataSet ds;
 
         public MapWindow()
         {
@@ -38,8 +38,8 @@ namespace GMap_Load_DataSet.GUI
             _ListOffices.clearList();
             string title = "472-Colombian Oficces";
 
-            DataSet ds = new DataSet();
-
+            ds = new DataSet();
+            
 
             ds.Tables.Add(title);
             ds.Tables[title].Columns.Add("UBICACIÓN");
@@ -89,41 +89,35 @@ namespace GMap_Load_DataSet.GUI
             //EN CASO DE SELECCIONAR EL ARCHIVO, ENTONCES PROCEDEMOS A ABRIR EL ARCHIVO CORRESPONDIENTE
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                listMap.GetDataGrid.DataSource = ImportData(openFileDialog.FileName);
+                if (ds != null)
+                {
+                    ds.Clear();
+                    listMap.GetDataGrid.DataSource = ImportData(openFileDialog.FileName);
+                }
+                else { 
+                    listMap.GetDataGrid.DataSource = ImportData(openFileDialog.FileName); 
+                }
+
             }
             addCategoriesComboBox.GetDepartments.Visible = true;
             BtnSearch.Visible = true;
+            gMap_LoadTotal();
 
             for (int i = 0; i < _ListOffices.listOffices.Count; i++)
             {
                 double lat = double.Parse(_ListOffices.listOffices[i].Lat);
                 double lon = double.Parse(_ListOffices.listOffices[i].lont);
 
-                PointLatLng poin = new PointLatLng(lon, lat);
-
-                puntos.Add(poin);
-            }
-
-            gMap_LoadTotal();
-
-        }
-
-
-        private void setMarkers()
-        {
-            for (int i = 0; i < puntos.Count; i++) //P es un punto creado con latitud y longitud
-            {
-
-                double lat1 = puntos[i].Lat;
-                double lon1 = puntos[i].Lng;
-
-                PointLatLng poin = new PointLatLng(lat1, lon1);
+                PointLatLng poin = new PointLatLng(lat, lon);
                 GMarkerGoogle marker = new GMarkerGoogle(poin, GMarkerGoogleType.green_dot);
-                markers.Markers.Add(marker); //Aqui se agrega el marcador a la capa
-
+                marker.ToolTipMode = MarkerTooltipMode.OnMouseOver;
+                marker.ToolTipText = string.Format("Información: \n Ubicacion:{0} \n Latitud:{1} \n Longitud:{2}", _ListOffices.listOffices[i].Name, _ListOffices.listOffices[i].Lat, _ListOffices.listOffices[i].lont);
+                markers.Markers.Add(marker);
             }
 
+
         }
+
 
         private void BtnSearch_Click(object sender, EventArgs e)
         {
@@ -146,11 +140,15 @@ namespace GMap_Load_DataSet.GUI
             gMap.AutoScroll = true;
             GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(20.9688132813906, -89.6250915527344), GMarkerGoogleType.green_dot);
             markers.Markers.Add(marker);
-            setMarkers();
             gMap.Overlays.Add(markers);
         }
 
         private void listMap_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gMap_Load(object sender, EventArgs e)
         {
 
         }

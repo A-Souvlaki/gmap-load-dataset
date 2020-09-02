@@ -39,7 +39,7 @@
             // buttImport
             // 
             this.buttImport.Location = new System.Drawing.Point(1177, 63);
-            this.buttImport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttImport.Margin = new System.Windows.Forms.Padding(4);
             this.buttImport.Name = "buttImport";
             this.buttImport.Size = new System.Drawing.Size(133, 59);
             this.buttImport.TabIndex = 1;
@@ -50,7 +50,7 @@
             // addCategoriesComboBox
             // 
             this.addCategoriesComboBox.Location = new System.Drawing.Point(60, 15);
-            this.addCategoriesComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.addCategoriesComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.addCategoriesComboBox.Name = "addCategoriesComboBox";
             this.addCategoriesComboBox.Size = new System.Drawing.Size(237, 127);
             this.addCategoriesComboBox.TabIndex = 3;
@@ -58,7 +58,7 @@
             // listMap
             // 
             this.listMap.Location = new System.Drawing.Point(33, 167);
-            this.listMap.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.listMap.Margin = new System.Windows.Forms.Padding(5);
             this.listMap.Name = "listMap";
             this.listMap.Size = new System.Drawing.Size(796, 656);
             this.listMap.TabIndex = 2;
@@ -67,7 +67,7 @@
             // BtnFilter
             // 
             this.BtnFilter.Location = new System.Drawing.Point(305, 113);
-            this.BtnFilter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnFilter.Margin = new System.Windows.Forms.Padding(4);
             this.BtnFilter.Name = "BtnFilter";
             this.BtnFilter.Size = new System.Drawing.Size(147, 28);
             this.BtnFilter.TabIndex = 4;
@@ -78,7 +78,7 @@
             // BtnSearch
             // 
             this.BtnSearch.Location = new System.Drawing.Point(305, 63);
-            this.BtnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.BtnSearch.Name = "BtnSearch";
             this.BtnSearch.Size = new System.Drawing.Size(147, 28);
             this.BtnSearch.TabIndex = 8;
@@ -96,7 +96,7 @@
             this.gMap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMap.LevelsKeepInMemmory = 5;
             this.gMap.Location = new System.Drawing.Point(868, 167);
-            this.gMap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gMap.Margin = new System.Windows.Forms.Padding(4);
             this.gMap.MarkersEnabled = true;
             this.gMap.MaxZoom = 100;
             this.gMap.MinZoom = 10;
@@ -113,6 +113,7 @@
             this.gMap.Size = new System.Drawing.Size(780, 656);
             this.gMap.TabIndex = 9;
             this.gMap.Zoom = 10D;
+            this.gMap.Load += new System.EventHandler(this.gMap_Load);
             // 
             // MapWindow
             // 
@@ -125,7 +126,7 @@
             this.Controls.Add(this.addCategoriesComboBox);
             this.Controls.Add(this.listMap);
             this.Controls.Add(this.buttImport);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MapWindow";
