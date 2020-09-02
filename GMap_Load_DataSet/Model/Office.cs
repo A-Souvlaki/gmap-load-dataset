@@ -8,7 +8,7 @@ namespace GMap_Load_DataSet.Model
 {
     public class Office
     {
-        
+
 
         string Ubication { get; }
         string Phone { get; }
@@ -21,6 +21,23 @@ namespace GMap_Load_DataSet.Model
         string Postal_Code { get; }
         string lat { get; }
         string lon { get; }
+
+
+        public string Lat
+        {
+            get => lat;
+        }
+
+        public string lont
+        {
+            get => lon;
+        }
+
+        public string Name
+        {
+            get => Ubication;
+        }
+
 
         public Office(string ubication, string phone, string email, string address, string town, string schedule, string departament, string country, string postal_Code, string lat, string lon)
         {

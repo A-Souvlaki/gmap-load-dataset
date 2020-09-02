@@ -9,16 +9,26 @@ namespace GMap_Load_DataSet.Model
     public class ListOffices
     {
 
-        List<Office> Offices;
+        List<Office> Offices { get; }
 
-        public ListOffices() 
+        public ListOffices()
         {
-            Offices = new List<Office>();        
+            Offices = new List<Office>();
         }
 
-        public void Add_List_Map(string ubication, string phone, string email, string address, string town, string schedule, string departament, string country, string postal_Code, string lat, string lon) 
+        public List<Office> listOffices
         {
-            Office c = new Office(ubication,phone,email,address,town,schedule,departament,country,postal_Code,lat,lon);
+            get => Offices;
+        }
+
+        public void clearList()
+        {
+            Offices.Clear();
+        }
+
+        public void Add_List_Map(string ubication, string phone, string email, string address, string town, string schedule, string departament, string country, string postal_Code, string lat, string lon)
+        {
+            Office c = new Office(ubication, phone, email, address, town, schedule, departament, country, postal_Code, lat, lon);
             Offices.Add(c);
         }
     }

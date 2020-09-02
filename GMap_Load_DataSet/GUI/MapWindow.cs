@@ -1,4 +1,9 @@
-﻿using System;
+﻿using GMap.NET;
+using GMap.NET.MapProviders;
+using GMap.NET.WindowsForms;
+using GMap.NET.WindowsForms.Markers;
+using GMap_Load_DataSet.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,16 +20,22 @@ namespace GMap_Load_DataSet.GUI
 {
     public partial class MapWindow : Form
     {
+        private ListOffices _ListOffices;
+        private List<PointLatLng> puntos;
+        GMapOverlay markers;
+
         public MapWindow()
         {
             InitializeComponent();
+            puntos = new List<PointLatLng>();
+            _ListOffices = new ListOffices();
         }
 
 
         DataView ImportData(String fileName)
         {
 
-
+            _ListOffices.clearList();
             string title = "472-Colombian Oficces";
 
             DataSet ds = new DataSet();
@@ -53,7 +64,9 @@ namespace GMap_Load_DataSet.GUI
 
                 int value = celdas.Length;
 
+                _ListOffices.Add_List_Map(celdas[0], celdas[1], celdas[2], celdas[3], celdas[3], celdas[4], celdas[5], celdas[6], celdas[7], celdas[8], celdas[9]);
                 ds.Tables[title].Rows.Add(celdas);
+
 
             }
 
@@ -81,6 +94,34 @@ namespace GMap_Load_DataSet.GUI
             addCategoriesComboBox.GetDepartments.Visible = true;
             BtnSearch.Visible = true;
 
+            for (int i = 0; i < _ListOffices.listOffices.Count; i++)
+            {
+                double lat = double.Parse(_ListOffices.listOffices[i].Lat);
+                double lon = double.Parse(_ListOffices.listOffices[i].lont);
+
+                PointLatLng poin = new PointLatLng(lon, lat);
+
+                puntos.Add(poin);
+            }
+
+            gMap_LoadTotal();
+
+        }
+
+
+        private void setMarkers()
+        {
+            for (int i = 0; i < puntos.Count; i++) //P es un punto creado con latitud y longitud
+            {
+
+                double lat1 = puntos[i].Lat;
+                double lon1 = puntos[i].Lng;
+
+                PointLatLng poin = new PointLatLng(lat1, lon1);
+                GMarkerGoogle marker = new GMarkerGoogle(poin, GMarkerGoogleType.green_dot);
+                markers.Markers.Add(marker); //Aqui se agrega el marcador a la capa
+
+            }
 
         }
 
@@ -90,6 +131,28 @@ namespace GMap_Load_DataSet.GUI
             {
                 addCategoriesComboBox.GetPossibleFiles.Visible = true;
             }
+        }
+
+        public void gMap_LoadTotal()
+        {
+            markers = new GMapOverlay("markers");
+            gMap.DragButton = MouseButtons.Left;
+            gMap.CanDragMap = true;
+            gMap.MapProvider = GoogleMapProvider.Instance;  //Proveedor del servicio
+            GMaps.Instance.Mode = AccessMode.ServerOnly;
+            gMap.MinZoom = 0;
+            gMap.MaxZoom = 24;
+            gMap.Zoom = 9;
+            gMap.AutoScroll = true;
+            GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(20.9688132813906, -89.6250915527344), GMarkerGoogleType.green_dot);
+            markers.Markers.Add(marker);
+            setMarkers();
+            gMap.Overlays.Add(markers);
+        }
+
+        private void listMap_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
