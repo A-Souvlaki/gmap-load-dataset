@@ -27,7 +27,6 @@ namespace GMap_Load_DataSet.GUI
         public MapWindow()
         {
             InitializeComponent();
-            puntos = new List<PointLatLng>();
             _ListOffices = new ListOffices();
         }
 
@@ -105,10 +104,10 @@ namespace GMap_Load_DataSet.GUI
 
             for (int i = 0; i < _ListOffices.listOffices.Count; i++)
             {
-                double lat = double.Parse(_ListOffices.listOffices[i].Lat);
-                double lon = double.Parse(_ListOffices.listOffices[i].lont);
+                double lat = double.Parse(_ListOffices.listOffices[i].Lat  ,System.Globalization.CultureInfo.InvariantCulture);
+                double lon = double.Parse(_ListOffices.listOffices[i].lont, System.Globalization.CultureInfo.InvariantCulture);
 
-                PointLatLng poin = new PointLatLng(lat, lon);
+                PointLatLng poin = new PointLatLng(lon, lat);
                 GMarkerGoogle marker = new GMarkerGoogle(poin, GMarkerGoogleType.green_dot);
                 marker.ToolTipMode = MarkerTooltipMode.OnMouseOver;
                 marker.ToolTipText = string.Format("Información: \n Ubicacion:{0} \n Latitud:{1} \n Longitud:{2}", _ListOffices.listOffices[i].Name, _ListOffices.listOffices[i].Lat, _ListOffices.listOffices[i].lont);
