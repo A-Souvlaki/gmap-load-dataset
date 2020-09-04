@@ -26,6 +26,7 @@ namespace GMap_Load_DataSet.GUI
 
         public MapWindow()
         {
+            markers = new GMapOverlay("Marcadores");
             InitializeComponent();
             _ListOffices = new ListOffices();
         }
@@ -128,28 +129,20 @@ namespace GMap_Load_DataSet.GUI
 
         public void gMap_LoadTotal()
         {
-            markers = new GMapOverlay("markers");
-            gMap.DragButton = MouseButtons.Left;
             gMap.CanDragMap = true;
-            gMap.MapProvider = GoogleMapProvider.Instance;  //Proveedor del servicio
+            gMap.MapProvider = GoogleMapProvider.Instance;
+            gMap.Position = new PointLatLng(4.570868, -74.297333);
+            gMap.Zoom = 5.8;
             GMaps.Instance.Mode = AccessMode.ServerOnly;
-            gMap.MinZoom = 0;
-            gMap.MaxZoom = 24;
-            gMap.Zoom = 9;
-            gMap.AutoScroll = true;
-            GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(20.9688132813906, -89.6250915527344), GMarkerGoogleType.green_dot);
-            markers.Markers.Add(marker);
             gMap.Overlays.Add(markers);
+
         }
 
         private void listMap_Load(object sender, EventArgs e)
         {
-
+           
+            
         }
 
-        private void gMap_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

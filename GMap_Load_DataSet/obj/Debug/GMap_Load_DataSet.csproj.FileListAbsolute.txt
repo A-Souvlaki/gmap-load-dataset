@@ -49,3 +49,7 @@ C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMaps_Exam
 C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMaps_Example-master\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.csproj.CopyComplete
 C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMaps_Example-master\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.exe
 C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMaps_Example-master\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.pdb
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\bin\Debug\GMap.NET.Core.dll
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\bin\Debug\GMap.NET.WindowsForms.dll
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.csprojAssemblyReference.cache
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.csproj.CopyComplete
