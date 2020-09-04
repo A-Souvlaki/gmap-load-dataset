@@ -104,6 +104,7 @@
             // 
             // listMap
             // 
+            this.listMap.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.listMap.Location = new System.Drawing.Point(25, 136);
             this.listMap.Margin = new System.Windows.Forms.Padding(4);
             this.listMap.Name = "listMap";

@@ -125,6 +125,7 @@ namespace GMap_Load_DataSet.GUI
             {
                 addCategoriesComboBox.GetPossibleFiles.Visible = true;
             }
+
         }
 
         public void gMap_LoadTotal()
@@ -135,7 +136,6 @@ namespace GMap_Load_DataSet.GUI
             gMap.Zoom = 5.8;
             GMaps.Instance.Mode = AccessMode.ServerOnly;
             gMap.Overlays.Add(markers);
-
         }
 
         private void listMap_Load(object sender, EventArgs e)
