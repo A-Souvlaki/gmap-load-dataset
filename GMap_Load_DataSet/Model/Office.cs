@@ -8,20 +8,17 @@ namespace GMap_Load_DataSet.Model
 {
     public class Office
     {
+        
 
-
-        string Ubication { get; }
-        string Phone { get; }
-        string Email { get; }
-        string Address { get; }
-        string Town { get; }
-        string Schedule { get; }
-        string Departament { get; }
-        string Country { get; }
-        string Postal_Code { get; }
-        string lat { get; }
-        string lon { get; }
-
+        public string Ubication { get; }
+        public string Phone { get; }
+        public string Email { get; }
+        public string Address { get; }
+        public string Departament { get; }
+        public string Schedule { get; }
+        public string Zip_Code { get; }
+        public string lat { get; }
+        public string lon { get; }
 
         public string Lat
         {
@@ -39,17 +36,15 @@ namespace GMap_Load_DataSet.Model
         }
 
 
-        public Office(string ubication, string phone, string email, string address, string town, string schedule, string departament, string country, string postal_Code, string lat, string lon)
+        public Office(string ubication, string phone, string email, string address, string departament, string schedule, string zip_Code, string lat, string lon)
         {
             Ubication = ubication;
             Phone = phone;
             Email = email;
             Address = address;
-            Town = town;
-            Schedule = schedule;
             Departament = departament;
-            Country = country;
-            Postal_Code = postal_Code;
+            Schedule = schedule;
+            Zip_Code = zip_Code;
             this.lat = lat;
             this.lon = lon;
         }

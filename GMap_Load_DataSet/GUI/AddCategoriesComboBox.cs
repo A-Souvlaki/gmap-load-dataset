@@ -13,36 +13,52 @@ namespace GMap_Load_DataSet.GUI
     public partial class AddCategoriesComboBox : UserControl
     {
 
-        string[] _departments = { "BOGOTA D.C.", "CUNDINAMARCA", "BOYACA", "META", "AMAZONAS", "GUAINIA", "CASANARE", "CALDAS", "QUINDIO", "VALLE DEL CAUCA", "RISARALDA", "TOLIMA", "BOLIVAR", "GUAJIRA", "MAGDALENA", "ATLANTICO", "CORDOBA", "SUCRE", "NARIÑO", "ARAUCA", "PUTUMAYO", "CESAR", "SANTANDER", "NORTE DE SANTADER", "HUILA" };
+        public event EventHandler SelectedIndexChanged;
+
+        string[] _categories = { "DEPARTAMENTO", "MUNICIPIO","CODIGO POSTAL" };
 
 
         public AddCategoriesComboBox()
         {
             InitializeComponent();
+
+           
         }
-        /**
-         *This method is used to access the values from the Combobox
-         */
+       
         public ComboBox GetPossibleFiles { get { return PossibleValuesCB; } }
-        /**
-         * This method allows to load the departments
-         */
-        public ComboBox GetDepartments { get { return CategoriesCB; } }
+        
+        public ComboBox GetCategories { get { return CategoriesCB; } }
+
+        public TextBox GetTextTown { get { return textTown; } }
+
+        public Label GetLabCat { get { return labCat; } }
+
+        public Label GetLabDep { get { return labDep; } }
+
+        public Label GetLabMin { get { return labMin; } }
+
+        public Label GetLabMax { get { return labMax; } }
+
+        public TextBox GetTextMin { get { return textMin; } }
+
+        public TextBox GetTextMax { get { return textMax; } }
 
 
-        private void AddCategoriesComboBox_Load(object sender, EventArgs e)
-        {
-            for (int i = 0; i < _departments.Length; i++)
-            {
-                CategoriesCB.Items.Add(_departments[i]);
-            }
-
-        }
 
         private void CategoriesCB_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if(SelectedIndexChanged != null)
+            {
+                SelectedIndexChanged(this, e);
+            }
         }
 
+        private void AddCategoriesComboBox_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < _categories.Length; i++)
+            {
+                CategoriesCB.Items.Add(_categories[i]);
+            }
+        }
     }
 }

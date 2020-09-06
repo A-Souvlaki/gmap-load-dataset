@@ -41,7 +41,7 @@
             this.dataGridMap.Location = new System.Drawing.Point(0, 0);
             this.dataGridMap.Name = "dataGridMap";
             this.dataGridMap.ReadOnly = true;
-            this.dataGridMap.Size = new System.Drawing.Size(800, 600);
+            this.dataGridMap.Size = new System.Drawing.Size(564, 321);
             this.dataGridMap.TabIndex = 0;
             this.dataGridMap.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridMap_CellContentClick);
             // 
@@ -51,7 +51,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridMap);
             this.Name = "ListMapInformation";
-            this.Size = new System.Drawing.Size(800, 600);
+            this.Size = new System.Drawing.Size(564, 321);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridMap)).EndInit();
             this.ResumeLayout(false);
 
