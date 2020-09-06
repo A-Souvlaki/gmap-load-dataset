@@ -12,3 +12,18 @@ C:\Users\Camilo\Documents\Git C#\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\G
 C:\Users\Camilo\Documents\Git C#\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.csproj.CopyComplete
 C:\Users\Camilo\Documents\Git C#\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.exe
 C:\Users\Camilo\Documents\Git C#\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.pdb
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\bin\Debug\GMap_Load_DataSet.exe.config
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\bin\Debug\GMap_Load_DataSet.exe
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\bin\Debug\GMap_Load_DataSet.pdb
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\bin\Debug\GMap.NET.Core.dll
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\bin\Debug\GMap.NET.WindowsForms.dll
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.csprojAssemblyReference.cache
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.GUI.AddCategoriesComboBox.resources
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.GUI.ListMapInformation.resources
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.GUI.MapWindow.resources
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.Properties.Resources.resources
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.csproj.GenerateResource.cache
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.csproj.CoreCompileInputs.cache
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.csproj.CopyComplete
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.exe
+E:\Documentos\C#\GMap_Load_DataSet-master\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.pdb
