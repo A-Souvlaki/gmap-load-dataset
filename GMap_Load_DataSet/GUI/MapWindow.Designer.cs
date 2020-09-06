@@ -64,9 +64,10 @@
             // 
             // buttImport
             // 
-            this.buttImport.Location = new System.Drawing.Point(40, 631);
+            this.buttImport.Location = new System.Drawing.Point(53, 777);
+            this.buttImport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttImport.Name = "buttImport";
-            this.buttImport.Size = new System.Drawing.Size(81, 23);
+            this.buttImport.Size = new System.Drawing.Size(108, 28);
             this.buttImport.TabIndex = 1;
             this.buttImport.Text = "Import";
             this.buttImport.UseVisualStyleBackColor = true;
@@ -74,9 +75,10 @@
             // 
             // BtnFilter
             // 
-            this.BtnFilter.Location = new System.Drawing.Point(291, 559);
+            this.BtnFilter.Location = new System.Drawing.Point(388, 688);
+            this.BtnFilter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnFilter.Name = "BtnFilter";
-            this.BtnFilter.Size = new System.Drawing.Size(90, 23);
+            this.BtnFilter.Size = new System.Drawing.Size(120, 28);
             this.BtnFilter.TabIndex = 4;
             this.BtnFilter.Text = "Filter";
             this.BtnFilter.UseVisualStyleBackColor = true;
@@ -85,9 +87,10 @@
             // 
             // BtnSearch
             // 
-            this.BtnSearch.Location = new System.Drawing.Point(291, 559);
+            this.BtnSearch.Location = new System.Drawing.Point(388, 688);
+            this.BtnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnSearch.Name = "BtnSearch";
-            this.BtnSearch.Size = new System.Drawing.Size(90, 23);
+            this.BtnSearch.Size = new System.Drawing.Size(120, 28);
             this.BtnSearch.TabIndex = 5;
             this.BtnSearch.Text = "Search";
             this.BtnSearch.UseVisualStyleBackColor = true;
@@ -96,9 +99,10 @@
             // 
             // BtnAll
             // 
-            this.BtnAll.Location = new System.Drawing.Point(128, 631);
+            this.BtnAll.Location = new System.Drawing.Point(171, 777);
+            this.BtnAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnAll.Name = "BtnAll";
-            this.BtnAll.Size = new System.Drawing.Size(75, 23);
+            this.BtnAll.Size = new System.Drawing.Size(100, 28);
             this.BtnAll.TabIndex = 6;
             this.BtnAll.Text = "All Data";
             this.BtnAll.UseVisualStyleBackColor = true;
@@ -107,9 +111,10 @@
             // 
             // BtnCal
             // 
-            this.BtnCal.Location = new System.Drawing.Point(291, 559);
+            this.BtnCal.Location = new System.Drawing.Point(388, 688);
+            this.BtnCal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnCal.Name = "BtnCal";
-            this.BtnCal.Size = new System.Drawing.Size(90, 23);
+            this.BtnCal.Size = new System.Drawing.Size(120, 28);
             this.BtnCal.TabIndex = 7;
             this.BtnCal.Text = "Calculate";
             this.BtnCal.UseVisualStyleBackColor = true;
@@ -119,9 +124,10 @@
             // labRange
             // 
             this.labRange.AutoSize = true;
-            this.labRange.Location = new System.Drawing.Point(38, 597);
+            this.labRange.Location = new System.Drawing.Point(51, 735);
+            this.labRange.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labRange.Name = "labRange";
-            this.labRange.Size = new System.Drawing.Size(205, 13);
+            this.labRange.Size = new System.Drawing.Size(277, 17);
             this.labRange.TabIndex = 8;
             this.labRange.Text = "Valores permitidos entre 50015 y 9040001";
             this.labRange.Visible = false;
@@ -130,9 +136,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label1.Location = new System.Drawing.Point(13, 11);
+            this.label1.Location = new System.Drawing.Point(17, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 25);
+            this.label1.Size = new System.Drawing.Size(139, 29);
             this.label1.TabIndex = 9;
             this.label1.Text = "Bienvenido";
             // 
@@ -145,7 +152,8 @@
             legend1.MaximumAutoSize = 80F;
             legend1.Name = "Legend1";
             this.Diagram.Legends.Add(legend1);
-            this.Diagram.Location = new System.Drawing.Point(749, 417);
+            this.Diagram.Location = new System.Drawing.Point(999, 513);
+            this.Diagram.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Diagram.Name = "Diagram";
             this.Diagram.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series1.ChartArea = "ChartArea1";
@@ -154,7 +162,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.Diagram.Series.Add(series1);
-            this.Diagram.Size = new System.Drawing.Size(499, 262);
+            this.Diagram.Size = new System.Drawing.Size(665, 322);
             this.Diagram.TabIndex = 10;
             this.Diagram.Text = "chart1";
             this.Diagram.Visible = false;
@@ -162,9 +170,10 @@
             // radioBar
             // 
             this.radioBar.AutoSize = true;
-            this.radioBar.Location = new System.Drawing.Point(689, 417);
+            this.radioBar.Location = new System.Drawing.Point(919, 513);
+            this.radioBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioBar.Name = "radioBar";
-            this.radioBar.Size = new System.Drawing.Size(41, 17);
+            this.radioBar.Size = new System.Drawing.Size(51, 21);
             this.radioBar.TabIndex = 11;
             this.radioBar.TabStop = true;
             this.radioBar.Text = "Bar";
@@ -174,9 +183,10 @@
             // radioPie
             // 
             this.radioPie.AutoSize = true;
-            this.radioPie.Location = new System.Drawing.Point(690, 465);
+            this.radioPie.Location = new System.Drawing.Point(920, 572);
+            this.radioPie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioPie.Name = "radioPie";
-            this.radioPie.Size = new System.Drawing.Size(40, 17);
+            this.radioPie.Size = new System.Drawing.Size(49, 21);
             this.radioPie.TabIndex = 12;
             this.radioPie.TabStop = true;
             this.radioPie.Text = "Pie";
@@ -186,9 +196,10 @@
             // radioPoints
             // 
             this.radioPoints.AutoSize = true;
-            this.radioPoints.Location = new System.Drawing.Point(689, 440);
+            this.radioPoints.Location = new System.Drawing.Point(919, 542);
+            this.radioPoints.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioPoints.Name = "radioPoints";
-            this.radioPoints.Size = new System.Drawing.Size(54, 17);
+            this.radioPoints.Size = new System.Drawing.Size(68, 21);
             this.radioPoints.TabIndex = 13;
             this.radioPoints.TabStop = true;
             this.radioPoints.Text = "Points";
@@ -197,9 +208,10 @@
             // 
             // BtnSee
             // 
-            this.BtnSee.Location = new System.Drawing.Point(689, 488);
+            this.BtnSee.Location = new System.Drawing.Point(919, 601);
+            this.BtnSee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnSee.Name = "BtnSee";
-            this.BtnSee.Size = new System.Drawing.Size(44, 23);
+            this.BtnSee.Size = new System.Drawing.Size(59, 28);
             this.BtnSee.TabIndex = 14;
             this.BtnSee.Text = "See";
             this.BtnSee.UseVisualStyleBackColor = true;
@@ -212,14 +224,15 @@
             this.Points.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.Points.Legends.Add(legend2);
-            this.Points.Location = new System.Drawing.Point(749, 417);
+            this.Points.Location = new System.Drawing.Point(999, 513);
+            this.Points.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Points.Name = "Points";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.Points.Series.Add(series2);
-            this.Points.Size = new System.Drawing.Size(499, 262);
+            this.Points.Size = new System.Drawing.Size(665, 322);
             this.Points.TabIndex = 15;
             this.Points.Text = "chart1";
             this.Points.Visible = false;
@@ -230,14 +243,15 @@
             this.Pie.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.Pie.Legends.Add(legend3);
-            this.Pie.Location = new System.Drawing.Point(749, 417);
+            this.Pie.Location = new System.Drawing.Point(999, 513);
+            this.Pie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Pie.Name = "Pie";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series3.Legend = "Legend1";
             series3.Name = "Series1";
             this.Pie.Series.Add(series3);
-            this.Pie.Size = new System.Drawing.Size(499, 262);
+            this.Pie.Size = new System.Drawing.Size(665, 322);
             this.Pie.TabIndex = 16;
             this.Pie.Text = "chart1";
             this.Pie.Visible = false;
@@ -250,8 +264,8 @@
             this.gMap.GrayScaleMode = false;
             this.gMap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMap.LevelsKeepInMemmory = 5;
-            this.gMap.Location = new System.Drawing.Point(634, 74);
-            this.gMap.Margin = new System.Windows.Forms.Padding(2);
+            this.gMap.Location = new System.Drawing.Point(845, 91);
+            this.gMap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gMap.MarkersEnabled = true;
             this.gMap.MaxZoom = 2;
             this.gMap.MinZoom = 2;
@@ -265,7 +279,7 @@
             this.gMap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMap.ShowTileGridLines = false;
-            this.gMap.Size = new System.Drawing.Size(614, 308);
+            this.gMap.Size = new System.Drawing.Size(819, 379);
             this.gMap.TabIndex = 17;
             this.gMap.Zoom = 0D;
             this.gMap.Load += new System.EventHandler(this.gMap_Load);
@@ -273,9 +287,10 @@
             // radioMar
             // 
             this.radioMar.AutoSize = true;
-            this.radioMar.Location = new System.Drawing.Point(634, 52);
+            this.radioMar.Location = new System.Drawing.Point(845, 64);
+            this.radioMar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioMar.Name = "radioMar";
-            this.radioMar.Size = new System.Drawing.Size(58, 17);
+            this.radioMar.Size = new System.Drawing.Size(73, 21);
             this.radioMar.TabIndex = 18;
             this.radioMar.TabStop = true;
             this.radioMar.Text = "Marker";
@@ -285,9 +300,10 @@
             // radioPol
             // 
             this.radioPol.AutoSize = true;
-            this.radioPol.Location = new System.Drawing.Point(698, 52);
+            this.radioPol.Location = new System.Drawing.Point(931, 64);
+            this.radioPol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioPol.Name = "radioPol";
-            this.radioPol.Size = new System.Drawing.Size(63, 17);
+            this.radioPol.Size = new System.Drawing.Size(80, 21);
             this.radioPol.TabIndex = 19;
             this.radioPol.TabStop = true;
             this.radioPol.Text = "Polygon";
@@ -296,9 +312,10 @@
             // 
             // BtnChan
             // 
-            this.BtnChan.Location = new System.Drawing.Point(767, 49);
+            this.BtnChan.Location = new System.Drawing.Point(1023, 60);
+            this.BtnChan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnChan.Name = "BtnChan";
-            this.BtnChan.Size = new System.Drawing.Size(57, 23);
+            this.BtnChan.Size = new System.Drawing.Size(76, 28);
             this.BtnChan.TabIndex = 20;
             this.BtnChan.Text = "Change";
             this.BtnChan.UseVisualStyleBackColor = true;
@@ -307,26 +324,27 @@
             // 
             // addCategoriesComboBox
             // 
-            this.addCategoriesComboBox.Location = new System.Drawing.Point(10, 465);
-            this.addCategoriesComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.addCategoriesComboBox.Location = new System.Drawing.Point(13, 572);
+            this.addCategoriesComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.addCategoriesComboBox.Name = "addCategoriesComboBox";
-            this.addCategoriesComboBox.Size = new System.Drawing.Size(307, 127);
+            this.addCategoriesComboBox.Size = new System.Drawing.Size(409, 156);
             this.addCategoriesComboBox.TabIndex = 3;
             // 
             // listMap
             // 
-            this.listMap.Location = new System.Drawing.Point(16, 52);
-            this.listMap.Margin = new System.Windows.Forms.Padding(4);
+            this.listMap.Location = new System.Drawing.Point(21, 64);
+            this.listMap.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.listMap.Name = "listMap";
-            this.listMap.Size = new System.Drawing.Size(599, 399);
+            this.listMap.Size = new System.Drawing.Size(799, 491);
             this.listMap.TabIndex = 2;
+            this.listMap.Load += new System.EventHandler(this.listMap_Load);
             // 
             // MapWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Honeydew;
-            this.ClientSize = new System.Drawing.Size(1304, 681);
+            this.ClientSize = new System.Drawing.Size(1739, 838);
             this.Controls.Add(this.BtnChan);
             this.Controls.Add(this.radioPol);
             this.Controls.Add(this.radioMar);
@@ -348,6 +366,7 @@
             this.Controls.Add(this.listMap);
             this.Controls.Add(this.buttImport);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MapWindow";

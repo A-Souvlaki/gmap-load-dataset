@@ -12,3 +12,18 @@ C:\Users\Camilo\Documents\Git C#\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\G
 C:\Users\Camilo\Documents\Git C#\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.csproj.CopyComplete
 C:\Users\Camilo\Documents\Git C#\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.exe
 C:\Users\Camilo\Documents\Git C#\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.pdb
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\bin\Debug\GMap_Load_DataSet.exe.config
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\bin\Debug\GMap_Load_DataSet.exe
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\bin\Debug\GMap_Load_DataSet.pdb
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\bin\Debug\GMap.NET.Core.dll
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.csprojAssemblyReference.cache
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.GUI.AddCategoriesComboBox.resources
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.GUI.ListMapInformation.resources
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.GUI.MapWindow.resources
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.Properties.Resources.resources
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.csproj.GenerateResource.cache
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.csproj.CoreCompileInputs.cache
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.csproj.CopyComplete
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.exe
+C:\Users\Juan José Restrepo B\Desktop\Trabajos 5 semestre\Integrador\GMap_Load_DataSet\GMap_Load_DataSet\obj\Debug\GMap_Load_DataSet.pdb
