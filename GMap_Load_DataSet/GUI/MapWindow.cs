@@ -405,8 +405,9 @@ namespace GMap_Load_DataSet.GUI
             }
         }
 
-       
+        private void listMap_Load(object sender, EventArgs e)
+        {
 
-      
+        }
     }
 }

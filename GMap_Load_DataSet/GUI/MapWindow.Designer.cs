@@ -251,7 +251,7 @@
             this.gMap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMap.LevelsKeepInMemmory = 5;
             this.gMap.Location = new System.Drawing.Point(634, 74);
-            this.gMap.Margin = new System.Windows.Forms.Padding(2);
+            this.gMap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gMap.MarkersEnabled = true;
             this.gMap.MaxZoom = 2;
             this.gMap.MinZoom = 2;
@@ -308,7 +308,7 @@
             // addCategoriesComboBox
             // 
             this.addCategoriesComboBox.Location = new System.Drawing.Point(10, 465);
-            this.addCategoriesComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.addCategoriesComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addCategoriesComboBox.Name = "addCategoriesComboBox";
             this.addCategoriesComboBox.Size = new System.Drawing.Size(307, 127);
             this.addCategoriesComboBox.TabIndex = 3;
@@ -316,10 +316,11 @@
             // listMap
             // 
             this.listMap.Location = new System.Drawing.Point(16, 52);
-            this.listMap.Margin = new System.Windows.Forms.Padding(4);
+            this.listMap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listMap.Name = "listMap";
             this.listMap.Size = new System.Drawing.Size(599, 399);
             this.listMap.TabIndex = 2;
+            this.listMap.Load += new System.EventHandler(this.listMap_Load);
             // 
             // MapWindow
             // 
