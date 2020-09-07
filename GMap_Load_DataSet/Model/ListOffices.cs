@@ -83,7 +83,7 @@ namespace GMap_Load_DataSet.Model
             for (int i = 0; i < Offices.Count; i++)
             {
                 string code = Offices[i].Zip_Code.Trim();
-                int c = Int32.Parse(code);
+                long c = Int64.Parse(code);
 
                 if ((c>= min && c<= max))
                 {
